@@ -15,14 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main id="home">
+      <div id="home">
         <TheHeader />
-        <About />
-        <Contact />
-        <Experience />
-        <Hero />
+        <main className="flex flex-col px-36">
+          <Hero />
+          <About />
+          <Experience />
+          <Contact />
+        </main>
         <TheFooter />
-      </main>
+      </div>
     </>
   );
 }
