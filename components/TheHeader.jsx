@@ -6,7 +6,11 @@ const TheHeader = () => {
     { to: '#about', name: 'About' },
     { to: '#experience', name: 'Experience' },
     { to: '#contact', name: 'Contact' },
-    { to: '/resume.pdf', name: 'Resume', classes: 'border rounded px-4 py-2' },
+    {
+      to: '/resume.pdf',
+      name: 'Resume',
+      classes: 'text-sky-500 border border-sky-500 rounded px-4 py-2',
+    },
   ];
 
   return (
@@ -17,9 +21,7 @@ const TheHeader = () => {
             <a
               key={link.name}
               href={link.to}
-              className={`hover:text-sky-500 hover:border-sky-500 ${
-                link.classes ?? ''
-              }`}
+              className={`hover:text-sky-500 ${link.classes ?? ''}`}
             >
               {link.name}
             </a>
