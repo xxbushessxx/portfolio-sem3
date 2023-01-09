@@ -3,7 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="max-width-[900px] mx-48">
+    <section className="mx-14 flex h-screen flex-col items-start justify-center p-0">
+     
         <h2 className = "mt-2 mb-8 flex items-center text-4xl">
           <span className="font-black">About me</span>
         </h2>
@@ -20,12 +21,9 @@ const About = () => {
             </p>
             <p>My current technology stack consists of:</p>
             <ul className="inline-list grid grid-cols-2 grid-rows-3 gap-x-2 gap-y-1 font-serif text-base text-foreground-dim">
-              <li>Something 1</li>
-              <li>Something 2</li>
-              <li>Something 3</li>
-              <li>Something 4</li>
-              <li>Something 5</li>
-              <li>Something 6</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
             </ul>
           </div>
           {/* right */}
@@ -34,7 +32,7 @@ const About = () => {
             
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

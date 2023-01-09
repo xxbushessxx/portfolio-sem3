@@ -19,7 +19,7 @@ const Contact = () => {
             potential opportunities. I am excited at the possibility of working
             with your organization and contributing to its success.
           </p>
-          <a href="mailto:i487944@fhict.nl?subject=Internship" class="py-2 px-4 font-mono border border-blue-400 text-blue-400 hover:bg-primary/10">Contact me</a>
+          <a href="mailto:nikoloverik@gmail.com" class="py-2 px-4 font-mono border border-blue-400 text-blue-400 hover:bg-primary/10">Contact me</a>
         </div>
       </div>
     </>

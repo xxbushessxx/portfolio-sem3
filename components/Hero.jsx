@@ -10,12 +10,12 @@ const Hero = () => {
           I design.
         </p>
         <p className="mt-4 text-lg max-w-lg">
-          I'm a Computer Science student @{' '}
+          I'm a ICT&Software Engineer student @{' '}
           <a href="https://fontys.edu/" className="text-sky-500">
             Fontys
           </a>
           . I'm also a competitive swimmer and specialize in digital design.
-          Currently I'm focused on finishing my studies but am also{' '}
+          Currently I'm focused on finishing my studies but I am also{' '}
           <em>looking for an internship</em>!
         </p>
       </section>

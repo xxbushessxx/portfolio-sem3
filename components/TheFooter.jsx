@@ -4,9 +4,7 @@ const TheFooter = () => {
   return (
   <>
   <footer className="py-8 text-center font-mono text-xs sticky">
-    <p>Build by Erik Nikolov @2023</p>
-    <p>Inspired by: </p>
-    <p className="hidden">Georgi Georgiev</p>
+    <p>Build by Erik Nikolov @ 2023</p>
   </footer>
   </>
   );
