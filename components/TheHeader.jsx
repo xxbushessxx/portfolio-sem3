@@ -2,14 +2,14 @@ import React from 'react';
 
 const TheHeader = () => {
   const links = [
-    { to: '#home', name: 'Home' },
-    { to: '#about', name: 'About' },
-    { to: '#experience', name: 'Experience' },
-    { to: '#contact', name: 'Contact' },
+    { to: '#home', name: 'Home', isButton: false },
+    { to: '#about', name: 'About', isButton: false },
+    { to: '#experience', name: 'Experience', isButton: false },
+    { to: '#contact', name: 'Contact', isButton: false },
     {
       to: '/resume.pdf',
       name: 'Resume',
-      classes: 'text-sky-500 border border-sky-500 rounded px-4 py-2',
+      isButton: true,
     },
   ];
 
@@ -21,7 +21,12 @@ const TheHeader = () => {
             <a
               key={link.name}
               href={link.to}
-              className={`hover:text-sky-500 ${link.classes ?? ''}`}
+              target={link.to.startsWith('#') ? '_self' : '_blank'}
+              className={
+                link.isButton
+                  ? 'inline-flex cursor-pointer place-content-center rounded border border-primary py-2 px-4 font-sans text-primary hover:bg-primary/10'
+                  : 'text-foreground hover:text-primary'
+              }
             >
               {link.name}
             </a>

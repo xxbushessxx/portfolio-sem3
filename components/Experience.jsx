@@ -3,86 +3,92 @@ import React from 'react';
 const Experience = () => {
   const projects = [
     {
-      name: 'Example',
+      name: 'Weather API',
       description:
-        'This is an example project description. It is supposed to give a short overview of the contents. Maybe mention relevant experiences as well.',
-      technologies: ['HTML', 'CSS', 'JS'],
-      source: 'https://github.com',
-      live: 'https://google.com',
+        'Website which shows the weather forecast in your selected city.',
+      technologies: ['JS'],
+      source: 'https://git.fhict.nl/I487944/weather-api',
+    },
+    {
+      name: 'Guess My Number',
+      description: 'A simple number guessing game.',
+      technologies: ['JS'],
+      source: 'https://git.fhict.nl/I487944/guess-my-number',
     },
   ];
 
   return (
     <>
-      <section className="my-0 mx-auto py-[6.5rem] max-w-3xl">
-        <h2 class="mt-2 mb-8 flex items-center text-4xl font-black">
+      <section id="experience" className="my-0 mx-auto py-[6.5rem] max-w-3xl">
+        <h2 className="heading-line mt-2 mb-8 flex items-center text-2xl font-black">
           Projects I've built
         </h2>
-        <div class="space-y-20">
+        <div className="space-y-10">
           {projects.map((project) => (
-            <>
-              <article className="h-full cursor-pointer rounded bg-neutral-50 p-6 shadow-md hover:shadow-lg">
-                <header className="mb-6 flex items-center justify-between">
-                  <h4 className="text-lg font-extrabold">{project.name}</h4>
-                  <div className="inline-flex space-x-4 text-xl">
-                    {project.source && (
-                      <a
-                        href={project.source}
-                        target="_blank"
-                        className="hover:text-sky-500"
+            <article
+              className="project-card h-full rounded text-foreground bg-background-bright p-6 shadow-md hover:shadow-lg"
+              key={project.name}
+            >
+              <header className="mb-6 flex items-center justify-between">
+                <h4 className="text-lg text-primary font-extrabold">
+                  {project.name}
+                </h4>
+                <div className="inline-flex space-x-4 text-xl">
+                  {project.source && (
+                    <a
+                      href={project.source}
+                      target="_blank"
+                      className="hover:text-primary"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.25em"
+                        height="1.25em"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          // style={{ verticalAlign: '-0.125em' }}
-                          width="1.25em"
-                          height="1.25em"
-                          preserveAspectRatio="xMidYMid meet"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
-                          />
-                        </svg>
-                      </a>
-                    )}
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        className="hover:text-sky-500"
+                        <path
+                          fill="currentColor"
+                          d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m6.75 11.5c2.75 0 3.49-2.03 3.68-3.1c.91-.29 1.57-1.14 1.57-2.15C18 7 17 6 15.75 6S13.5 7 13.5 8.25c0 .94.57 1.75 1.39 2.08C14.67 11 14 12 12 12c-1.38 0-2.34.35-3 .84V8.87c.87-.31 1.5-1.14 1.5-2.12c0-1.25-1-2.25-2.25-2.25S6 5.5 6 6.75c0 .98.63 1.81 1.5 2.12v6.26c-.87.31-1.5 1.14-1.5 2.12c0 1.25 1 2.25 2.25 2.25s2.25-1 2.25-2.25c0-.93-.56-1.75-1.37-2.07c.28-.68 1.1-1.68 3.62-1.68m-4.5 3a.75.75 0 0 1 .75.75a.75.75 0 0 1-.75.75a.75.75 0 0 1-.75-.75a.75.75 0 0 1 .75-.75m0-10.5a.75.75 0 0 1 .75.75a.75.75 0 0 1-.75.75a.75.75 0 0 1-.75-.75a.75.75 0 0 1 .75-.75m7.5 1.5a.75.75 0 0 1 .75.75a.75.75 0 0 1-.75.75a.75.75 0 0 1-.75-.75a.75.75 0 0 1 .75-.75Z"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      className="hover:text-primary"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.25em"
+                        height="1.25em"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          // style={{ verticalAlign: '-0.125em' }}
-                          width="1.25em"
-                          height="1.25em"
-                          preserveAspectRatio="xMidYMid meet"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z"
-                          />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                </header>
-                <main>
-                  <p className="text-sm tracking-tight">
-                    {project.description}
-                  </p>
-                </main>
-                <footer>
-                  <ul className="invisible-scroll mt-4 space-x-4 overflow-scroll font-mono text-[0.7rem] font-thin text-neutral-600">
-                    {project.technologies.map((technology) => (
-                      <li className="inline">{technology}</li>
-                    ))}
-                  </ul>
-                </footer>
-              </article>
-            </>
+                        <path
+                          fill="currentColor"
+                          d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              </header>
+              <main>
+                <p className="text-sm tracking-tight">{project.description}</p>
+              </main>
+              <footer>
+                <ul className="invisible-scroll mt-4 space-x-4 overflow-scroll font-mono text-[0.7rem] font-thin text-foreground-dim">
+                  {project.technologies.map((technology) => (
+                    <li className="inline" key={technology}>
+                      {technology}
+                    </li>
+                  ))}
+                </ul>
+              </footer>
+            </article>
           ))}
         </div>
       </section>

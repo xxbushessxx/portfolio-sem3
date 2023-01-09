@@ -1,27 +1,35 @@
-import React from "react";
+import React from 'react';
 
 const Contact = () => {
   return (
     <>
-      <div className="max-width-[900px] mx-48 ">
-        <h2 className="mt-2 mb-8 flex items-center text-3xl justify-center">
-          <span className="font-black">Contact</span>
+      <section
+        id="contact"
+        className="mb-20 flex max-w-[600px] flex-col items-center justify-center"
+      >
+        <h2 className="mt-2 mb-2 flex capitalize">
+          <span className="font-mono text-sm text-primary"> What's next? </span>
         </h2>
-        <div className="mx-40 space-y-9 flex flex-col items-center justify-center">
-          <h2 className="mt-2 mb-2 flex capitalize justify-center">
-            <span className="text-3xl">Get in touch</span>
-          </h2>
-          <p className="text-center">
-            I am seeking an internship opportunity and am interested in
-            connecting with potential employers. I am ambitious and motivated,
-            and believe an internship will allow me to learn and grow. Please
-            feel free to contact me if you are interested in discussing
-            potential opportunities. I am excited at the possibility of working
-            with your organization and contributing to its success.
-          </p>
-          <a href="mailto:nikoloverik@gmail.com" class="py-2 px-4 font-mono border border-blue-400 text-blue-400 hover:bg-primary/10">Contact me</a>
-        </div>
-      </div>
+        <h2 className="mt-2 mb-6 flex capitalize">
+          <span className="text-4xl font-black">Get in touch</span>
+        </h2>
+        <p>
+          Currently seeking an <strong>internship</strong> opportunity and am
+          interested in connecting with potential <strong>employers</strong>. I
+          am <strong>ambitious</strong> and <strong>motivated</strong>, and
+          believe an internship will allow me to learn and grow. Please feel
+          free to contact me if you are interested in discussing potential
+          opportunities. I am excited at the possibility of working with{' '}
+          <strong>your organization</strong> and contributing to its{' '}
+          <strong>success</strong>.
+        </p>
+        <a
+          href="mailto:nikoloverik@gmail.com"
+          className="mt-10 capitalize inline-flex cursor-pointer place-content-center rounded border border-primary py-2 px-4 font-sans text-primary hover:bg-primary/10"
+        >
+          Contact me
+        </a>
+      </section>
     </>
   );
 };
