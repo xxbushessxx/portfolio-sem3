@@ -22,8 +22,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['var(--font-nunito)', ...defaultTheme.fontFamily.sans],
-      mono: ['var(--font-space)', ...defaultTheme.fontFamily.mono],
+      sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+      mono: ['"Space Mono"', ...defaultTheme.fontFamily.mono],
     },
     keyframes: {
       pulsate: {
