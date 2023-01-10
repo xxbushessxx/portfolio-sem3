@@ -8,7 +8,10 @@ const Contact = () => {
         className="mb-20 flex max-w-[600px] flex-col items-center justify-center"
       >
         <h2 className="mt-2 mb-2 flex capitalize">
-          <span className="font-mono text-sm text-primary"> What's next? </span>
+          <span className="font-mono text-sm text-secondary">
+            {' '}
+            What's next?{' '}
+          </span>
         </h2>
         <h2 className="mt-2 mb-6 flex capitalize">
           <span className="text-4xl font-black">Get in touch</span>

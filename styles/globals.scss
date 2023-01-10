@@ -22,6 +22,10 @@
     @apply content-[''] block relative  w-60 h-px ml-4 bg-foreground bg-opacity-40;
   }
 
+  strong {
+    @apply text-secondary;
+  }
+
   ::-webkit-scrollbar {
     @apply w-3;
   }
@@ -53,7 +57,7 @@
   }
 
   .inline-list li::before {
-    @apply content-['▹'] text-primary  absolute left-0;
+    @apply content-['▹'] text-secondary  absolute left-0;
   }
 
   .invisible-scroll {

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <section className="mx-14 flex h-screen flex-col items-start justify-center p-0">
-        <p className="mb-4 ml-2 font-mono text-primary">Hello! My name is</p>
+        <p className="mb-4 ml-2 font-mono text-secondary">Hello! My name is</p>
         <h1 className="text-6xl font-black leading-tight">Erik Nikolov</h1>
         <p className="text-5xl font-black leading-tight text-foreground-dim">
           I design.

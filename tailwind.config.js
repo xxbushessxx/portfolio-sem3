@@ -9,34 +9,24 @@ module.exports = {
   theme: {
     colors: {
       background: {
-        bright: '#0F0F2E',
-        DEFAULT: '#080818',
+        bright: '#161616',
+        DEFAULT: '#0A0A0A',
       },
       foreground: {
-        DEFAULT: '#DADFE1',
-        dim: '#9AA7AC',
+        DEFAULT: '#FAFAFA',
+        dim: '#CCCCCC',
       },
       primary: {
-        DEFAULT: '#F4D03F',
-        dim: '#AE8D0A',
+        DEFAULT: '#C0493A',
+        dim: '#AD4234',
+      },
+      secondary: {
+        DEFAULT: '#689775',
       },
     },
     fontFamily: {
       sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       mono: ['"Space Mono"', ...defaultTheme.fontFamily.mono],
-    },
-    keyframes: {
-      pulsate: {
-        from: {
-          transform: 'scale(1)',
-        },
-        '50%': {
-          transform: 'scale(1.25)',
-        },
-        to: {
-          transform: 'scale(1.1)',
-        },
-      },
     },
   },
 };

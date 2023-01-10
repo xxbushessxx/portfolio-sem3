@@ -15,7 +15,7 @@ const TheHeader = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-20 flex h-24 w-full items-center justify-end bg-background bg-opacity-80 px-12 backdrop-blur">
+      <header className="fixed top-0 left-0 z-20 flex h-24 w-full items-center justify-end bg-background-bright bg-opacity-80 px-12 backdrop-blur">
         <nav className="flex items-center align-center space-x-8">
           {links.map((link) => (
             <a

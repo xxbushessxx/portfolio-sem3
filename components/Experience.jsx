@@ -38,7 +38,7 @@ const Experience = () => {
                     <a
                       href={project.source}
                       target="_blank"
-                      className="hover:text-primary"
+                      className="hover:text-secondary"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const Experience = () => {
                     <a
                       href={project.live}
                       target="_blank"
-                      className="hover:text-primary"
+                      className="hover:text-secondary"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
