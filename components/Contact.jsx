@@ -26,6 +26,7 @@ const Contact = () => {
           <strong>your organization</strong> and contributing to its{' '}
           <strong>success</strong>.
         </p>
+        {/* link to my email */}
         <a
           href="mailto:nikoloverik@gmail.com"
           className="mt-10 capitalize inline-flex cursor-pointer place-content-center rounded border border-primary py-2 px-4 font-sans text-primary hover:bg-primary/10"

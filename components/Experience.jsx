@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Experience = () => {
+  // my projects json's
   const projects = [
     {
       name: 'Weather API',
@@ -24,6 +25,7 @@ const Experience = () => {
           Projects I've built
         </h2>
         <div className="space-y-10">
+          {/* listing the projects in  article component*/}
           {projects.map((project) => (
             <article
               className="project-card h-full rounded text-foreground bg-background-bright p-6 shadow-md hover:shadow-lg"

@@ -2,6 +2,7 @@ import React from 'react';
 import Clock from './Clock';
 
 const TheHeader = () => {
+  // links to the other components, isButton boolean which is used for changing the design of the button and the mouse cursor
   const links = [
     { to: '#home', name: 'Home', isButton: false },
     { to: '#about', name: 'About', isButton: false },
